@@ -1,0 +1,78 @@
+/* Write your CSS here */
+.cart-summary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-price-value {
+  color: #171f46;
+  font-weight: 'Roboto';
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.total-label {
+  color: #616e7c;
+  font-weight: 'Roboto';
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.total-items {
+  color: #616e7c;
+  font-weight: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.checkout-btn {
+  background-color: #0b69ff;
+  height: 35px;
+  width: 100%;
+  max-width: 200px;
+  color: #ffffff;
+  font-weight: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.checkout-btn-large {
+  background-color: #0b69ff;
+  height: 35px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.app-cart-summary {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .checkout-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .checkout-btn-large {
+    display: none;
+  }
+}
