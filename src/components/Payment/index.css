@@ -1,0 +1,87 @@
+.payments-container {
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 16px;
+  border-color: #f3b1b1;
+  display: flex;
+  box-shadow: 0px 0px 10px 2px lightblue inset;
+  flex-direction: column;
+}
+
+.payments-heading {
+  color: #eb3d45;
+  font-family: 'Roboto';
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.payments-para {
+  color: #111213;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0 15px;
+}
+
+.payment-method-inputs {
+  margin: 0px;
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.payment-method-input-container {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.payment-method-input {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.payment-method-label {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: #dfb708;
+}
+
+.disabled-label {
+  color: #dfb708;
+}
+
+.confirm-order-button {
+  background-color: teal;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+.confirm-order-button:disabled {
+  opacity: 0.5;
+  background-color: #636363;
+}
+
+.success-message {
+  font-size: 18px;
+  color: teal;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.side {
+  color: #616e7c;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 600;
+}

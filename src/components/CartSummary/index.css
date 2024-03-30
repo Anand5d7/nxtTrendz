@@ -42,6 +42,7 @@
   border-radius: 6px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .checkout-btn-large {

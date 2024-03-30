@@ -1,4 +1,8 @@
-// Write your code here
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Popup from 'reactjs-popup'
+
+import Payment from '../Payment'
+
 import CartContext from '../../context/CartContext'
 
 import './index.css'
@@ -19,13 +23,18 @@ const CartSummary = () => (
               <span className="total-label">Order Total: </span> Rs {total}/-
             </h1>
             <p className="total-items">{cartList.length} Items in cart</p>
-            <button type="button" className="checkout-btn">
-              Checkout
-            </button>
           </div>
-          <button type="button" className="checkout-btn-large">
-            Checkout
-          </button>
+          <Popup
+            modal
+            trigger={
+              <button type="button" className="checkout-btn-large">
+                Checkout
+              </button>
+            }
+            position="top left"
+          >
+            {close => <Payment close={close} />}
+          </Popup>
         </div>
       )
     }}
